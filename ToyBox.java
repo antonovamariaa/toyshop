@@ -22,7 +22,7 @@ public class ToyBox {
     // проверка листа игрушек на пустоту
     public boolean isEmpty() {
         for (Toy toy : toys) {
-            if (toy.getAmount() >= 0) {
+            if (toy.getAmount() > 0) {
                 return false;
             }
         }
